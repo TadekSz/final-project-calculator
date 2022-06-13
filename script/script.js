@@ -26,9 +26,9 @@ keys.addEventListener("click", (e) => {
       action === "divide"
     ) {
       key.classList.add("is-depressed");
-      calculator.dataset.previousKeyType = "operator";
       calculator.dataset.firstValue = displayedNum;
       calculator.dataset.operator = action;
+      calculator.dataset.previousKeyType = "operator";
     }
     Array.from(key.parentNode.children).forEach((k) =>
       k.classList.remove("is-depressed")
